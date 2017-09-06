@@ -1,0 +1,4 @@
+Caught: java.lang.NoSuchMethodError: org.tmatesoft.svn.core.wc.SVNCommitClient: method <init>()V not found
+java.lang.NoSuchMethodError: org.tmatesoft.svn.core.wc.SVNCommitClient: method <init>()V not found
+	at DoSVNCommit.<init>(DoSVNCommit.groovy)
+	at DoSVNCommit.main(DoSVNCommit.groovy:10)
