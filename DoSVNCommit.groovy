@@ -6,12 +6,12 @@ import org.tmatesoft.svn.core.wc.SVNWCUtil
 import org.tmatesoft.svn.core.SVNException
 
 @Log4j
-public class DoSVNCommit extends SVNCommitClient {
-	
+public class DoSVNCommit extends SVNCommitClient{
+
 	public DoSVNCommit(ISVNAuthenticationManager authManager) {
 		super(authManager, SVNWCUtil.createDefaultOptions(true))
 	}
-	
+
 	public void commit(File[] files, boolean keeplocks, String commitMessage, boolean force, boolean recursive) {
 		try{
 			this.doCommit(files, keeplocks, commitMessage, force, recursive)
@@ -21,4 +21,3 @@ public class DoSVNCommit extends SVNCommitClient {
 		}
 	}
 }
-
